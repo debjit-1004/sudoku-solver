@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suduko solver</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+   
+    <div class="grid-container" id="gridContainer"></div>
+    <input type="text" placeholder="enter the suduko grid in 2d array " id="data">
+    <button id="solve">solve</button>
+    <script>
+        const gridContainer = document.getElementById('gridContainer');
+        for (let i = 1; i <= 81; i++) {
+            const gridItem = document.createElement('div');
+            gridItem.className = 'grid-item';
+            gridItem.textContent = i;
+            gridContainer.appendChild(gridItem);
+        }
+    </script>
+
+    <script src="index.js"></script>
+</body>
+</html>

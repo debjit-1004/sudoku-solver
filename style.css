@@ -1,0 +1,29 @@
+
+body, html {
+    border: 100px;
+    padding: 25px;
+    height: 100%;
+}
+        input{
+            margin: 40px;
+            padding: 10px;
+            position: relative;
+            align-items: center;
+        }
+        .grid-container {
+            border: 20px;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+            gap: 5px; /* Adjust the gap between boxes as needed */
+            width: 90%; /* Adjust the width of the container as needed */
+            margin: auto; /* Center the grid on the page */
+        }
+        .grid-item {
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            height: 50px; /* Adjust the height of the boxes as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
