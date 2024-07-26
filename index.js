@@ -45,6 +45,18 @@ solve.addEventListener('click',()=>{
     console.log((data));
     sudokoSolver(data)
 
+    const gridContainer = document.getElementById('gridContainer');
+    for (let i = 0; i <= 80; i++) {
+        let a=Math.floor(i/9);
+        let b=i%9;
+        console.log(a,b)
+        const gridItem = document.createElement('div');
+        gridItem.className = 'grid-item';
+        gridItem.textContent = data[a][b];
+        gridContainer.appendChild(gridItem);
+        document.getElementById('data').value= ' '
+    }
+
 
 })
 console.log(data)
