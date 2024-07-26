@@ -34,11 +34,15 @@ function sudokoSolver(data) {
    return true;
   }
 
+  function parseInput(input) {
+    return JSON.parse(input.replace(/'/g, '"'));
+}
+
 
 solve.addEventListener('click',()=>{
     
-    data = document.getElementById('data').value;
-    console.log(typeof(data));
+    data = parseInput(document.getElementById('data').value);
+    console.log((data));
     sudokoSolver(data)
 
 
